@@ -6,7 +6,7 @@
     <title>Cars</title>
 </head>
 <body>
-<table th:border = "1">
+<table th:border = "1" th:align="center">
     <thead>
     <tr>
         <th scope="col">Brand</th>
@@ -15,7 +15,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:block th:each="car : ${carList}" >
+    <tr th:block th:each="car : ${cars}" >
         <td th:text="${car.getBrand}"></td>
         <td th:text="${car.getSerial}"></td>
         <td th:text="${car.getColor}"></td>
